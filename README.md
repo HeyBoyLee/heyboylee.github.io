@@ -1,4 +1,4 @@
-# LiXizhi's Personal Website
+# smartcrazy's Personal Website
 
-Runing on Github + Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
+Runing on Github + Jekyll theme by [smartcrazy](https://github.com/HeyBoyLee/heyboylee.github.io)**
 
