@@ -21,6 +21,7 @@ categories: javascript
 		  "commit-msg": "./validate-commit-msg.js"
 		}
 	}
+	
 然后，每次git commit的时候，这个脚本就会自动检查 Commit message 是否合格。如果不合格，就会报错。
 
 	$ git add -A 
