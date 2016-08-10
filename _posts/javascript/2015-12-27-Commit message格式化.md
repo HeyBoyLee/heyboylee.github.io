@@ -9,7 +9,7 @@ categories: javascript
 * content
 {:toc}
 
-###validate-commit-msg 
+### validate-commit-msg 
 
 用于检查 Node 项目的 Commit message 是否符合格式。
 
