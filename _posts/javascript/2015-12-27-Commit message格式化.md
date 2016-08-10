@@ -10,6 +10,7 @@ categories: javascript
 {:toc}
 
 ###validate-commit-msg 
+
 用于检查 Node 项目的 Commit message 是否符合格式。
 
 它的安装是手动的。首先，拷贝下面这个JS文件，放入你的代码库。文件名可以取为[validate-commit-msg.js](https://github.com/kentcdodds/validate-commit-msg/blob/master/index.js)。
@@ -27,3 +28,17 @@ categories: javascript
 	$ git add -A 
 	$ git commit -m "edit markdown" 
 	INVALID COMMIT MSG: does not match "<type>(<scope>): <subject>" ! was: edit markdown
+
+### 格式
+* feat：新功能（feature）
+* fix：修补bug
+* docs：文档（documentation）
+* style： 格式（不影响代码运行的变动）
+* refactor：重构（即不是新增功能，也不是修改bug的代码变动）
+* test：增加测试
+* chore：构建过程或辅助工具的变动
+	
+	
+type(scope): subject
+	
+	$chore(package): update
