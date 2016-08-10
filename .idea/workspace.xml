@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c829f3e-56db-44c6-b891-7335b59a9202" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="$PROJECT_DIR$/_includes/head.html" />
     </list>
     <ignored path="heyboylee.github.io.iws" />
@@ -87,8 +86,8 @@
       <file leaf-file-name="head.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="93" selection-start-line="23" selection-start-column="93" selection-end-line="23" selection-end-column="93" />
+            <state relative-caret-position="315">
+              <caret line="33" column="97" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -398,12 +397,12 @@
       <workItem from="1470128391580" duration="3793000" />
       <workItem from="1470669328656" duration="1772000" />
       <workItem from="1470799951205" duration="1946000" />
-      <workItem from="1470830987366" duration="2625000" />
+      <workItem from="1470830987366" duration="3057000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27056000" />
+    <option name="totallyTimeSpent" value="27488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1228" height="777" extended-state="6" />
@@ -669,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="93" selection-start-line="23" selection-start-column="93" selection-end-line="23" selection-end-column="93" />
+        <state relative-caret-position="315">
+          <caret line="33" column="97" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="97" />
           <folding />
         </state>
       </provider>
