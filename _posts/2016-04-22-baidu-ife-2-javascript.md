@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "百度Web前端技术学院(2)-JavaScript 基础"
-date:   2015-04-22 19:06:05
+date:   2016-04-22 19:06:05
 categories: Front-end JavaScript
 excerpt: 百度前端学院基础课程 JavaScript 相关。
 ---
