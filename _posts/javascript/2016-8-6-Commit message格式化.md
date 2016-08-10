@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Commit message 格式化"
-date:   2015-12-27
+date:   2016-8-6
 comments: true
 categories: javascript
 ---

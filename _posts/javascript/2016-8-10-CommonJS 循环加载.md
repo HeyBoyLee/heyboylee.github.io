@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Commit message 格式化"
-date:   2015-12-27
+title:  "CommonJS 循环加载"
+date:   2016-8-10
 comments: true
 categories: javascript
 ---
