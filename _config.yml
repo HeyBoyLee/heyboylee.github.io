@@ -13,6 +13,8 @@ description: BLOG & IDEA
 github_username:  HeyBoyLee
 permalink: /:year/:month/:day/:title/
 
+qiniu: http://7xwfcm.com2.z0.glb.qiniucdn.com
+
 # Build settings
 markdown: kramdown
 
