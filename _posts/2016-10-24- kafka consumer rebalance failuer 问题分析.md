@@ -4,11 +4,7 @@ title:  "kafka consumer rebalance failure问题分析"
 date:   2016-10-24 10:00:00
 categories: 开发者手册
 ---
-
-# kafka consumer rebalance failure问题分析
-
 ### 问题
-
 	近期在使用kafka替代rabbtimq的过程中出现了几次consumer rebalance失败的问题，导致服务出现暂时不可用，送达延迟增大的问题。
 
 ### 问题主要有下面几个:
@@ -19,7 +15,6 @@ categories: 开发者手册
 	因此，决定花一些精力研究一些kafka consumer rebalance机制，看能否通过一些配置或对客户端源码的简单改动解决这个隐患。
 
 ### rebalance触发时机
-
 	目前有以下几种情况会触发rebalance
 	有broker发生增加、减少或其他变更时（/brokers/ids）
 	zookeeper session expired重新建立时
@@ -27,7 +22,6 @@ categories: 开发者手册
 	当有新的topic创建时   /brokers/topics/*
 
 ### rebalance流程
-
 	对rebalance流程，最多重试rebalance.max.retries次，每次尝试失败后，则等待rebalance.backoff.ms 毫秒
 	查看是否有broker存在，如果没有任何broker存在，则退出  （/brokers/ids）
 	关闭fetchers，停止从broker读取数据，将所有的offset信息写到zk   (/consumers/${groupid}/offsets/${topic}/${partitionid})
@@ -56,6 +50,5 @@ categories: 开发者手册
 	增大重试次数也是一个可选方案。rebalance failure发生主要原因是在绑定消费关系时，该partition的绑定关系没有被其他的consumer释放。理论上，经过足够多次的重试，每个consumer都应该能够rebalance成功，只是consumer group的规模越大，所需要的尝试次数越多。
 
 ### 捕获ConsumerRebalanceFailedException
-
 	目前的主要问题不是rebalance failure的发生，而是rebalance failure发生之后无法自动恢复。而不能自动恢复的原因是kafka rebalance线程抛出的Exception我们无法捕获并做一定的处理。
 	想到一个比较hack的方法，就是在log4j的appender中比较日志中的exception，如果是我们认为致命的异常，就通知程序退出重启。重启时需要注意一点，最好使用单独的线程去处理重启操作，否则很容易产生清理线程与调用线程访问同一把锁而产生死锁的现象。
